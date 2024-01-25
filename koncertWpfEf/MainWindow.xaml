@@ -1,0 +1,33 @@
+﻿<Window x:Class="koncertWpfEf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:koncertWpfEf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <DockPanel>
+                <Menu>
+                    <MenuItem x:Name="menuFajl" Header="Fájl" Click="menuFajl_Click">
+                        <MenuItem x:Name="menuKilepes" Header="Kilépés" Click="MenuItem_Click"/>
+                    </MenuItem>
+                    <MenuItem x:Name="menuFelvesz" Header="Koncert felvétel" Click="menuFelvesz_Click">
+
+                    </MenuItem>
+                    <MenuItem x:Name="menuListaz" Header="Koncert listázása" Click="menuListaz_Click">
+                    </MenuItem>
+
+
+
+                </Menu>
+
+            </DockPanel>
+            <ContentControl x:Name="ccKoncert" Content="ContentControl" Height="415"/>
+        </StackPanel>
+       
+
+
+    </Grid>
+</Window>
