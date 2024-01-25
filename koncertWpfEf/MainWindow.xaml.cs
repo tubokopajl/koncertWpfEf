@@ -29,6 +29,7 @@ namespace koncertWpfEf
          
             InitializeComponent();
             context = new KoncertContext();
+            context.Database.EnsureCreated();
             koncertAddControl = new KoncertAddControl(context);
             koncertListazControl = new KoncertListazControl(context);
 
